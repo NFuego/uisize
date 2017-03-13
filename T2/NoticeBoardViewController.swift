@@ -11,6 +11,7 @@ protocol NoticeBoardPresenterViewProtocol: class {
 	- parameters:
 		- title The title to set
 	*/
+
 	func set(title: String?)
     func setBoard(i:UIImageView)
 }
@@ -22,6 +23,10 @@ class NoticeBoardViewController: UIViewController {
 
 	// MARK: - Constants
 	let presenter: NoticeBoardViewPresenterProtocol
+    let v1:UIView = UIView()
+    let v2:UIView = UIView()
+    let v3:UIView = UIView()
+    let v4:UIView = UIView()
 
 	// MARK: Variables
 
@@ -38,8 +43,21 @@ class NoticeBoardViewController: UIViewController {
 	// MARK: - Load Functions
 	override func viewDidLoad() {
     	super.viewDidLoad()
-		presenter.viewLoaded()
-		view.backgroundColor = .white
+//		presenter.viewLoaded()
+//		view.backgroundColor = .white
+        self.view.addSubview(v1)
+        self.view.addSubview(v2)
+        self.view.addSubview(v3)
+        self.view.addSubview(v4)
+        v1.backgroundColor = .red
+        v2.backgroundColor = .yellow
+        v3.backgroundColor = .blue
+        v4.backgroundColor = .black
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        dimensionTest()
+        
     }
 }
 
@@ -53,8 +71,32 @@ extension NoticeBoardViewController: NoticeBoardPresenterViewProtocol {
 
     func setBoard(i: UIImageView) {
        self.view.addSubview(i)
+
         i.snp.makeConstraints { (make) in
             make.size.equalToSuperview()
+        }
+    }
+
+    func dimensionTest(){
+       v1.snp.makeConstraints { (make) in
+        make.width.equalToSuperview()
+        make.height.equalToSuperview().multipliedBy(0.25)
+        make.top.equalToSuperview()
+        }
+       v2.snp.makeConstraints { (make) in
+        make.width.equalToSuperview()
+        make.height.equalToSuperview().multipliedBy(0.25)
+        make.top.equalTo(v1.snp.bottom)
+        }
+       v3.snp.makeConstraints { (make) in
+        make.width.equalToSuperview()
+        make.height.equalToSuperview().multipliedBy(0.25)
+        make.top.equalTo(v2.snp.bottom)
+        }
+       v4.snp.makeConstraints { (make) in
+        make.width.equalToSuperview()
+        make.height.equalToSuperview().multipliedBy(0.25)
+        make.top.equalTo(v3.snp.bottom)
         }
     }
 }
