@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  T2
-//
-//  Created by zcon on 2017/3/13.
-//  Copyright © 2017年 test. All rights reserved.
-//
+
 
 import UIKit
 
@@ -12,7 +6,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.view.addSubview(NoticeBoardModule().view.view)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        NoticeBoardModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) { 
+           print("done")
+        }
     }
 
     override func didReceiveMemoryWarning() {
