@@ -6,6 +6,9 @@ target 'T2' do
   use_frameworks!
   pod 'SnapKit'
   pod 'SwiftyVIPER'
+  pod 'AnimatedCollectionViewLayout'
+  pod 'FSPagerView'
+  pod 'Kingfisher'
 
 
   # Pods for T2

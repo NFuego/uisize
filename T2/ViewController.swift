@@ -11,9 +11,16 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        NoticeBoardModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) { 
-           print("done")
+//        NoticeBoardModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) { 
+//           print("done")
+//        }
+        let nav = UINavigationController(rootViewController: AdvertisementModule().view)
+            self.present(nav, animated: true) { 
+            
         }
+//        AdvertisementModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) {
+//           print("init")
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,4 +30,7 @@ class ViewController: UIViewController {
 
 
 }
+
+
+
 

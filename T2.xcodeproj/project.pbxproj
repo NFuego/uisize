@@ -19,6 +19,17 @@
 		E739CA0F1E7681B500D013D6 /* NoticeBoardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739CA0A1E7681B500D013D6 /* NoticeBoardPresenter.swift */; };
 		E739CA101E7681B500D013D6 /* NoticeBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739CA0B1E7681B500D013D6 /* NoticeBoardRouter.swift */; };
 		E739CA111E7681B500D013D6 /* NoticeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739CA0C1E7681B500D013D6 /* NoticeBoardViewController.swift */; };
+		E74015361E7785EE0056A476 /* AdvertisementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74015311E7785EE0056A476 /* AdvertisementInteractor.swift */; };
+		E74015371E7785EE0056A476 /* AdvertisementModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74015321E7785EE0056A476 /* AdvertisementModule.swift */; };
+		E74015381E7785EE0056A476 /* AdvertisementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74015331E7785EE0056A476 /* AdvertisementPresenter.swift */; };
+		E74015391E7785EE0056A476 /* AdvertisementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74015341E7785EE0056A476 /* AdvertisementRouter.swift */; };
+		E740153A1E7785EE0056A476 /* AdvertisementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74015351E7785EE0056A476 /* AdvertisementViewController.swift */; };
+		E740153C1E778EE70056A476 /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740153B1E778EE70056A476 /* AnimatedCollectionViewLayout.swift */; };
+		E76CB4FC1E77CBAD0019E835 /* AdPagerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4F71E77CBAD0019E835 /* AdPagerInteractor.swift */; };
+		E76CB4FD1E77CBAD0019E835 /* AdPagerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4F81E77CBAD0019E835 /* AdPagerModule.swift */; };
+		E76CB4FE1E77CBAD0019E835 /* AdPagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4F91E77CBAD0019E835 /* AdPagerPresenter.swift */; };
+		E76CB4FF1E77CBAD0019E835 /* AdPagerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4FA1E77CBAD0019E835 /* AdPagerRouter.swift */; };
+		E76CB5001E77CBAD0019E835 /* AdPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4FB1E77CBAD0019E835 /* AdPagerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +47,17 @@
 		E739CA0A1E7681B500D013D6 /* NoticeBoardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeBoardPresenter.swift; sourceTree = "<group>"; };
 		E739CA0B1E7681B500D013D6 /* NoticeBoardRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeBoardRouter.swift; sourceTree = "<group>"; };
 		E739CA0C1E7681B500D013D6 /* NoticeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeBoardViewController.swift; sourceTree = "<group>"; };
+		E74015311E7785EE0056A476 /* AdvertisementInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisementInteractor.swift; sourceTree = "<group>"; };
+		E74015321E7785EE0056A476 /* AdvertisementModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisementModule.swift; sourceTree = "<group>"; };
+		E74015331E7785EE0056A476 /* AdvertisementPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisementPresenter.swift; sourceTree = "<group>"; };
+		E74015341E7785EE0056A476 /* AdvertisementRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisementRouter.swift; sourceTree = "<group>"; };
+		E74015351E7785EE0056A476 /* AdvertisementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisementViewController.swift; sourceTree = "<group>"; };
+		E740153B1E778EE70056A476 /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
+		E76CB4F71E77CBAD0019E835 /* AdPagerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerInteractor.swift; sourceTree = "<group>"; };
+		E76CB4F81E77CBAD0019E835 /* AdPagerModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerModule.swift; sourceTree = "<group>"; };
+		E76CB4F91E77CBAD0019E835 /* AdPagerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerPresenter.swift; sourceTree = "<group>"; };
+		E76CB4FA1E77CBAD0019E835 /* AdPagerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerRouter.swift; sourceTree = "<group>"; };
+		E76CB4FB1E77CBAD0019E835 /* AdPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerViewController.swift; sourceTree = "<group>"; };
 		EB6FD3195549A17A64B5B92D /* Pods-T2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T2/Pods-T2.debug.xcconfig"; sourceTree = "<group>"; };
 		FEC4A2D7C4A91D74AA267787 /* Pods-T2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T2.release.xcconfig"; path = "Pods/Target Support Files/Pods-T2/Pods-T2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +103,8 @@
 		E739C9EF1E763AB300D013D6 /* T2 */ = {
 			isa = PBXGroup;
 			children = (
+				E76CB4F61E77CB980019E835 /* pager */,
+				E74015301E7785BE0056A476 /* Advertisement */,
 				E739CA071E76819D00D013D6 /* Board */,
 				E739C9F01E763AB300D013D6 /* AppDelegate.swift */,
 				E739C9F21E763AB300D013D6 /* ViewController.swift */,
@@ -103,6 +127,31 @@
 				E739CA0C1E7681B500D013D6 /* NoticeBoardViewController.swift */,
 			);
 			name = Board;
+			sourceTree = "<group>";
+		};
+		E74015301E7785BE0056A476 /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
+				E74015311E7785EE0056A476 /* AdvertisementInteractor.swift */,
+				E74015321E7785EE0056A476 /* AdvertisementModule.swift */,
+				E74015331E7785EE0056A476 /* AdvertisementPresenter.swift */,
+				E74015341E7785EE0056A476 /* AdvertisementRouter.swift */,
+				E74015351E7785EE0056A476 /* AdvertisementViewController.swift */,
+				E740153B1E778EE70056A476 /* AnimatedCollectionViewLayout.swift */,
+			);
+			name = Advertisement;
+			sourceTree = "<group>";
+		};
+		E76CB4F61E77CB980019E835 /* pager */ = {
+			isa = PBXGroup;
+			children = (
+				E76CB4F71E77CBAD0019E835 /* AdPagerInteractor.swift */,
+				E76CB4F81E77CBAD0019E835 /* AdPagerModule.swift */,
+				E76CB4F91E77CBAD0019E835 /* AdPagerPresenter.swift */,
+				E76CB4FA1E77CBAD0019E835 /* AdPagerRouter.swift */,
+				E76CB4FB1E77CBAD0019E835 /* AdPagerViewController.swift */,
+			);
+			name = pager;
 			sourceTree = "<group>";
 		};
 		FD3FCB32B3396BDC12978D14 /* Pods */ = {
@@ -239,12 +288,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E740153C1E778EE70056A476 /* AnimatedCollectionViewLayout.swift in Sources */,
+				E74015381E7785EE0056A476 /* AdvertisementPresenter.swift in Sources */,
+				E76CB4FF1E77CBAD0019E835 /* AdPagerRouter.swift in Sources */,
 				E739CA101E7681B500D013D6 /* NoticeBoardRouter.swift in Sources */,
+				E76CB4FD1E77CBAD0019E835 /* AdPagerModule.swift in Sources */,
+				E740153A1E7785EE0056A476 /* AdvertisementViewController.swift in Sources */,
 				E739C9F31E763AB300D013D6 /* ViewController.swift in Sources */,
 				E739CA111E7681B500D013D6 /* NoticeBoardViewController.swift in Sources */,
 				E739C9F11E763AB300D013D6 /* AppDelegate.swift in Sources */,
+				E74015391E7785EE0056A476 /* AdvertisementRouter.swift in Sources */,
+				E74015371E7785EE0056A476 /* AdvertisementModule.swift in Sources */,
+				E76CB4FC1E77CBAD0019E835 /* AdPagerInteractor.swift in Sources */,
 				E739CA0F1E7681B500D013D6 /* NoticeBoardPresenter.swift in Sources */,
+				E76CB5001E77CBAD0019E835 /* AdPagerViewController.swift in Sources */,
 				E739CA0E1E7681B500D013D6 /* NoticeBoardModule.swift in Sources */,
+				E76CB4FE1E77CBAD0019E835 /* AdPagerPresenter.swift in Sources */,
+				E74015361E7785EE0056A476 /* AdvertisementInteractor.swift in Sources */,
 				E739CA0D1E7681B500D013D6 /* NoticeBoardInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

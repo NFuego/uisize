@@ -1,12 +1,3 @@
-//
-//  NoticeBoardModule.swift
-//  Project: T2
-//
-//  Module: NoticeBoard
-//
-//  By zcon 2017/3/13
-//  test 2017年
-//
 
 // MARK: Imports
 
@@ -20,7 +11,6 @@ import SwiftyVIPER
 final class NoticeBoardModule {
 
 	// MARK: - Variables
-
 	private(set) lazy var interactor: NoticeBoardInteractor = {
 		return NoticeBoardInteractor()
 	}()
