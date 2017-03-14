@@ -30,6 +30,7 @@
 		E76CB4FE1E77CBAD0019E835 /* AdPagerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4F91E77CBAD0019E835 /* AdPagerPresenter.swift */; };
 		E76CB4FF1E77CBAD0019E835 /* AdPagerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4FA1E77CBAD0019E835 /* AdPagerRouter.swift */; };
 		E76CB5001E77CBAD0019E835 /* AdPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB4FB1E77CBAD0019E835 /* AdPagerViewController.swift */; };
+		E7C20D231E77E58C0040A003 /* SNShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C20D221E77E58C0040A003 /* SNShare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		E76CB4F91E77CBAD0019E835 /* AdPagerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerPresenter.swift; sourceTree = "<group>"; };
 		E76CB4FA1E77CBAD0019E835 /* AdPagerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerRouter.swift; sourceTree = "<group>"; };
 		E76CB4FB1E77CBAD0019E835 /* AdPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPagerViewController.swift; sourceTree = "<group>"; };
+		E7C20D221E77E58C0040A003 /* SNShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNShare.swift; sourceTree = "<group>"; };
 		EB6FD3195549A17A64B5B92D /* Pods-T2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T2/Pods-T2.debug.xcconfig"; sourceTree = "<group>"; };
 		FEC4A2D7C4A91D74AA267787 /* Pods-T2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T2.release.xcconfig"; path = "Pods/Target Support Files/Pods-T2/Pods-T2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				E739C9FC1E763AB300D013D6 /* LaunchScreen.storyboard */,
 				E739C9FF1E763AB300D013D6 /* Info.plist */,
 				E739CA051E767CEA00D013D6 /* Media.xcassets */,
+				E7C20D221E77E58C0040A003 /* SNShare.swift */,
 			);
 			path = T2;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				E739CA0E1E7681B500D013D6 /* NoticeBoardModule.swift in Sources */,
 				E76CB4FE1E77CBAD0019E835 /* AdPagerPresenter.swift in Sources */,
 				E74015361E7785EE0056A476 /* AdvertisementInteractor.swift in Sources */,
+				E7C20D231E77E58C0040A003 /* SNShare.swift in Sources */,
 				E739CA0D1E7681B500D013D6 /* NoticeBoardInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

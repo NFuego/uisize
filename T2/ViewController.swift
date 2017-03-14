@@ -14,10 +14,27 @@ class ViewController: UIViewController {
 //        NoticeBoardModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) { 
 //           print("done")
 //        }
-        let nav = UINavigationController(rootViewController: AdvertisementModule().view)
-            self.present(nav, animated: true) { 
-            
-        }
+//        let nav = UINavigationController(rootViewController: AdvertisementModule().view)
+//            self.present(nav, animated: true) { 
+//        }
+
+
+        let data = SNSShareData(
+            text: "testtjeiowjriowejo",
+            images: [],
+            urls: [URL(string:"www.google.com.tw")!]
+        )
+
+//        http://stackoverflow.com/questions/31337490/how-to-share-image-in-instagramswift
+        SNSShare.post(type: .Twitter, data: data, controller: self, completion: { result in
+            switch result {
+            case .Success:
+                print("Posted!!")
+            case .Failure(let et):
+                print(et)
+            }
+        })
+        
 //        AdvertisementModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) {
 //           print("init")
 //        }

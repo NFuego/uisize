@@ -14,6 +14,10 @@ https://zsisme.gitbooks.io/ios-/content/chapter8/property-animations.html
  http://www.jianshu.com/p/f99d59837921
 
  http://www.jianshu.com/p/f819d55e1cb8
+ 
+ 
+ 
+ https://www.objc.io/issues/1-view-controllers/lighter-view-controllers/
  */
 
 
