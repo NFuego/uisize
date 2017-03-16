@@ -6,8 +6,9 @@ import SwiftyVIPER
 import AnimatedCollectionViewLayout
 
 import FSPagerView
-
 /*
+ 
+ https://medium.com/sketch-app-sources/designing-at-1x-33240842180c#.ekhm341ig
 
 https://zsisme.gitbooks.io/ios-/content/chapter8/property-animations.html
 
@@ -15,22 +16,15 @@ https://zsisme.gitbooks.io/ios-/content/chapter8/property-animations.html
 
  http://www.jianshu.com/p/f819d55e1cb8
  
- 
- 
  https://www.objc.io/issues/1-view-controllers/lighter-view-controllers/
  */
 
-
-
-
 class SimpleCollectionViewCell: UICollectionViewCell {
-    
     let titleLabel: UILabel = UILabel()
     let img = UIImageView(image: UIImage(named:"board"))
     let slider = AdPagerModule().view.pagerView
 
     static let ds = AdPagerModule().view
-
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -77,12 +71,10 @@ class SimpleCollectionViewCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 //    override init(frame: CGRect) {
 //        super.init(frame: frame)
 //
 //    }
-
 }
 
 extension String {
@@ -178,7 +170,7 @@ class AdvertisementViewController : UIViewController, UICollectionViewDataSource
         // Initialize UICollectionView without a layout
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: view.frame.width, height: view.frame.height - 64)
+        layout.itemSize = CGSize(width: view.frame.width, height: view.frame.height - 44)
 
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.dataSource = self
@@ -194,23 +186,16 @@ class AdvertisementViewController : UIViewController, UICollectionViewDataSource
         // Dispose of any resources that can be recreated.
     }
     
-    
     override var prefersStatusBarHidden: Bool { return true }
-
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
 
-
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SimpleCollectionViewCell
         return cell
     }
-
-
-    
-
 }
 
 

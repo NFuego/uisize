@@ -43,7 +43,7 @@ extension NoticeBoardInteractor: NoticeBoardPresenterInteractorProtocol {
 
     func reqBoards() {
         // todo donwload image
-        let img = UIImageView(image: UIImage(named:"board"))
+        let img = UIImageView(image: UIImage(named:"Fishbase1"))
         presenter?.setBoard(imv:img)
     }
 }

@@ -1,4 +1,8 @@
 
+/*
+ 
+https://github.com/phimage/ApplicationGroupKit
+ */
 
 import UIKit
 
@@ -11,14 +15,15 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-//        NoticeBoardModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) { 
-//           print("done")
-//        }
+        NoticeBoardModule().present(from: self, style: UIModalTransitionStyle.flipHorizontal) { 
+           print("done")
+        }
 //        let nav = UINavigationController(rootViewController: AdvertisementModule().view)
 //            self.present(nav, animated: true) { 
 //        }
 
 
+        return 
         let data = SNSShareData(
             text: "testtjeiowjriowejo",
             images: [],
@@ -44,8 +49,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
 

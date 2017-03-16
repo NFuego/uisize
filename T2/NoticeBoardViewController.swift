@@ -11,7 +11,6 @@ protocol NoticeBoardPresenterViewProtocol: class {
 	- parameters:
 		- title The title to set
 	*/
-
 	func set(title: String?)
     func setBoard(i:UIImageView)
 }
@@ -43,21 +42,22 @@ class NoticeBoardViewController: UIViewController {
 	// MARK: - Load Functions
 	override func viewDidLoad() {
     	super.viewDidLoad()
-//		presenter.viewLoaded()
-//		view.backgroundColor = .white
-        self.view.addSubview(v1)
-        self.view.addSubview(v2)
-        self.view.addSubview(v3)
-        self.view.addSubview(v4)
-        v1.backgroundColor = .red
-        v2.backgroundColor = .yellow
-        v3.backgroundColor = .blue
-        v4.backgroundColor = .black
+		presenter.viewLoaded()
+		view.backgroundColor = .blue
+
+//        self.view.addSubview(v1)
+//        self.view.addSubview(v2)
+//        self.view.addSubview(v3)
+//        self.view.addSubview(v4)
+//        v1.backgroundColor = .red
+//        v2.backgroundColor = .yellow
+//        v3.backgroundColor = .blue
+//        v4.backgroundColor = .black
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        dimensionTest()
-        
+//        dimensionTest()
+
     }
 }
 
@@ -70,10 +70,22 @@ extension NoticeBoardViewController: NoticeBoardPresenterViewProtocol {
 	}
 
     func setBoard(i: UIImageView) {
-       self.view.addSubview(i)
+        /*
 
+
+         320x500 for 5
+         
+         1.15 for 4.7
+         1.2 for 5.5
+         1.5 for 9.7
+         
+         */
+        let ratio = 1.2
+       self.view.addSubview(i)
         i.snp.makeConstraints { (make) in
-            make.size.equalToSuperview()
+            make.width.equalTo(320 * ratio)
+            make.height.equalTo(500 * ratio)
+            make.center.equalToSuperview()
         }
     }
 

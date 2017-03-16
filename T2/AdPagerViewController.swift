@@ -100,7 +100,7 @@ extension AdPagerViewController : FSPagerViewDataSource {
     public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         print(index)
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
-        let url = URL(string: img.first!)
+//        let url = URL(string: img.first!)
         cell.imageView?.kf.setImage(with: URL(string:img.first!))
 //        print(cell.imageView?.frame)
 //        cell.imageView?.kf.setImage(with: url, progressBlock: {
