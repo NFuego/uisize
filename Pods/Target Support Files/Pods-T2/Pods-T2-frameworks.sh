@@ -92,14 +92,20 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FSPagerView/FSPagerView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReSwift/ReSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReSwiftRouter/ReSwiftRouter.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SnapKit/SnapKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyTimer/SwiftyTimer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyVIPER/SwiftyVIPER.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FSPagerView/FSPagerView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReSwift/ReSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReSwiftRouter/ReSwiftRouter.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SnapKit/SnapKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyTimer/SwiftyTimer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyVIPER/SwiftyVIPER.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

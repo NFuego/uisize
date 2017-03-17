@@ -80,7 +80,7 @@ extension NoticeBoardViewController: NoticeBoardPresenterViewProtocol {
          1.5 for 9.7
          
          */
-        let ratio = 1.2
+       let ratio = 1.2
        self.view.addSubview(i)
         i.snp.makeConstraints { (make) in
             make.width.equalTo(320 * ratio)

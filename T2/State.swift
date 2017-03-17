@@ -2,10 +2,10 @@
 import Foundation
 import ReSwift
 
-//let mainStore = Store<AppState>(
-//    reducer: AppReducer(),
-//    state: nil
-//)
+let mainStore = Store<AppState>(
+    reducer: AppReducer(),
+    state: nil
+)
 
 struct Appointments {
     var pendingAppointments = 0

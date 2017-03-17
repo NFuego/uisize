@@ -2,23 +2,33 @@ PODS:
   - AnimatedCollectionViewLayout (0.2.0)
   - FSPagerView (0.3.0)
   - Kingfisher (3.5.2)
+  - ReSwift (3.0.0)
+  - ReSwiftRouter (0.5.1):
+    - ReSwift (~> 3.0.0)
   - SnapKit (3.2.0)
+  - SwiftyTimer (2.0.0)
   - SwiftyVIPER (1.2.3)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
   - FSPagerView
   - Kingfisher
+  - ReSwift
+  - ReSwiftRouter
   - SnapKit
+  - SwiftyTimer
   - SwiftyVIPER
 
 SPEC CHECKSUMS:
   AnimatedCollectionViewLayout: 6f385ed7deb673af8989f5240c4b0c32c9d25276
   FSPagerView: 6b8f6bade4221981365ec42fd113071fa695ceb8
   Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
+  ReSwift: f0255f4b4f2dacd12c5d97d34d13fc5dad6d6371
+  ReSwiftRouter: c620138bf94b57c068f789d51c0bd23efc42bf68
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
   SwiftyVIPER: 83afd74104ea27303ec6a52563f4adbf33413e50
 
-PODFILE CHECKSUM: 1008fc2f79b348c387327ddc988964b939f972f7
+PODFILE CHECKSUM: ccb6b14838fd1b1a0d086fc68a839037e0f067c0
 
 COCOAPODS: 1.2.0

@@ -9,6 +9,9 @@ target 'T2' do
   pod 'AnimatedCollectionViewLayout'
   pod 'FSPagerView'
   pod 'Kingfisher'
+  pod 'ReSwift'
+  pod 'SwiftyTimer'
+  pod 'ReSwiftRouter'
 
 
   # Pods for T2
