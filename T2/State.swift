@@ -13,5 +13,5 @@ struct Appointments {
 
 
 struct AppState : StateType {
-    var store : Appointments
+    var appointments : Appointments?
 }

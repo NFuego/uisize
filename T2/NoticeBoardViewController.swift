@@ -3,6 +3,7 @@
 import UIKit
 import SwiftyVIPER
 import SnapKit
+import ReSwift
 // MARK: Protocols
 
 /// Should be conformed to by the `NoticeBoardInteractor` and referenced by `NoticeBoardPresenter`
@@ -44,7 +45,6 @@ class NoticeBoardViewController: UIViewController {
     	super.viewDidLoad()
 		presenter.viewLoaded()
 		view.backgroundColor = .blue
-
 //        self.view.addSubview(v1)
 //        self.view.addSubview(v2)
 //        self.view.addSubview(v3)
@@ -55,10 +55,6 @@ class NoticeBoardViewController: UIViewController {
 //        v4.backgroundColor = .black
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-//        dimensionTest()
-
-    }
 }
 
 // MARK: - NoticeBoard Presenter to View Protocol
@@ -71,14 +67,12 @@ extension NoticeBoardViewController: NoticeBoardPresenterViewProtocol {
 
     func setBoard(i: UIImageView) {
         /*
-
-
          320x500 for 5
          
          1.15 for 4.7
          1.2 for 5.5
          1.5 for 9.7
-         
+
          */
        let ratio = 1.2
        self.view.addSubview(i)
@@ -110,5 +104,22 @@ extension NoticeBoardViewController: NoticeBoardPresenterViewProtocol {
         make.height.equalToSuperview().multipliedBy(0.25)
         make.top.equalTo(v3.snp.bottom)
         }
+    }
+}
+
+// MARK:- ReSwift
+extension NoticeBoardViewController : StoreSubscriber {
+    override func viewWillAppear(_ animated: Bool) {
+        mainStore.subscribe(self)
+        mainStore.dispatch(updateStoreAppointments)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+//        dimensionTest()
+        mainStore.unsubscribe(self)
+    }
+
+    func newState(state: AppState) {
+        print(state.appointments)
     }
 }
